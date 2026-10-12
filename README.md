@@ -1,8 +1,31 @@
 # Simulation du soft handover dans un réseau UMTS/WCDMA
 
-Mini-projet MATLAB — ENSA Tétouan, filière GSTR (Télécommunications et Systèmes de Réseaux).
+> Mini-projet réalisé en **GSTR3** (3e année du cycle ingénieur, 5e année après le bac) à l'**ENSA Tétouan**, filière Télécommunications et Systèmes de Réseaux (GSTR) — année universitaire 2026-2027.
+
+## Description
 
 Un mobile (UE) traverse une ligne de 2 ou 3 Node B. Le script calcule le **RSCP** et l'**Ec/No** du CPICH de chaque cellule, applique l'algorithme de soft handover 3GPP (événements **1A / 1B / 1C / 1D**, avec **hystérésis** et **Time-To-Trigger**) et en déduit la cellule servante, l'Active Set, les zones de soft handover, le nombre de handovers et les **ping-pong**.
+
+## Contexte
+
+Dans un réseau UMTS/WCDMA, tous les Node B partagent la même fréquence : un mobile en déplacement peut donc être connecté à plusieurs cellules en même temps (*soft handover*). Ce projet simule ce mécanisme pour étudier l'effet des paramètres de handover (hystérésis, Time-To-Trigger, reporting range) sur le nombre de handovers, la taille de l'Active Set et les ping-pong.
+
+## Compétences mobilisées
+
+- Modélisation du canal radio : affaiblissement de parcours (espace libre, Okumura-Hata, COST231-Hata, log-distance) et shadowing log-normal corrélé
+- Mesures radio WCDMA : RSCP, Ec/No, bruit thermique, interférence inter-cellules
+- Mobilité et handover 3GPP : événements 1A/1B/1C/1D, hystérésis, Time-To-Trigger, Active Set
+- Simulation et analyse de performance : tirages multiples (Monte-Carlo), étude paramétrique, indicateurs (overhead, ping-pong, taux de soft handover)
+- Programmation MATLAB structurée : fonctions locales, code commenté et reproductible (graine aléatoire), visualisation de données
+- Veille technique : lecture de spécifications 3GPP et d'articles de recherche
+
+## Stack technique
+
+| Outil | Usage |
+|---|---|
+| MATLAB (R2016b ou plus récent, sans toolbox) | Simulation, calculs et graphiques |
+| Git / GitHub | Versionnement et publication |
+| Spécifications 3GPP (TS 25.331, TS 25.133) | Référence pour l'algorithme de handover |
 
 ## Entrées et sorties
 
@@ -71,6 +94,11 @@ Dans le cas propre, la zone de soft handover occupe environ 13 % du trajet.
 - Schinnenburg, Forkel, Haverkamp, *Realization and Optimization of Soft and Softer Handover in UMTS Networks*, EPMCC 2003
 - Valenta, *Soft Handover Optimization in UMTS FDD Networks*, EEICT 2008
 - COST 231, *Digital Mobile Radio: Towards Future Generation Systems*
+
+## Auteur
+
+**Nourouddine Nachda** — étudiant ingénieur, ENSA Tétouan (GSTR3).
+Encadrant : *à compléter*
 
 ## Licence
 
