@@ -1,0 +1,11 @@
+# MATLAB
+*.asv
+*.autosave
+*.mex*
+slprj/
+# Figures exportees
+*.fig
+# OS / editeurs
+.DS_Store
+Thumbs.db
+.vscode/
