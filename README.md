@@ -1,6 +1,6 @@
 # Simulation du soft handover dans un réseau UMTS/WCDMA
 
-> Mini-projet réalisé en **GSTR3** (3e année du cycle ingénieur, 5e année après le bac) à l'**ENSA Tétouan**, filière Télécommunications et Systèmes de Réseaux (GSTR) — année universitaire 2026-2027.
+> Mini-projet réalisé en **GSTR3** (3e année du cycle ingénieur) à l'**ENSA Tétouan**, filière Génie des Systèmes de Télécommunications et Systèmes de Réseaux (GSTR) — année universitaire 2026-2027.
 
 ## Description
 
@@ -86,7 +86,7 @@ Dans le cas propre, la zone de soft handover occupe environ 13 % du trajet.
 - **Modèle de propagation** : COST231-Hata par défaut (valide de 1500 à 2000 MHz, légèrement extrapolé à 2100 MHz). Okumura-Hata n'est valide que jusqu'à 1500 MHz (avertissement affiché). Hata est défini pour des distances d'environ 1 km et plus ; la distance minimale est bornée à 20 m.
 - Le **hard handover** n'est pas modélisé : la phase à deux cellules dure toujours au moins le TTT, donc tout changement de cellule passe par un soft handover.
 - Les Node B sont alignés sur une droite, une seule porteuse, sans modélisation du softer handover ni de la liaison montante.
-- Le code MATLAB n'a pas pu être exécuté lors de sa rédaction ; seule la logique a été validée par un portage Python. Merci de signaler tout bug via une issue.
+
 
 ## Références
 
@@ -97,8 +97,9 @@ Dans le cas propre, la zone de soft handover occupe environ 13 % du trajet.
 
 ## Auteur
 
-**Nourouddine Nachda** — étudiant ingénieur, ENSA Tétouan (GSTR3).
-Encadrant : *à compléter*
+**Nachda Nourouddine** — étudiante ingénieure, ENSA Tétouan (GSTR3).
+
+Encadrant : **Pr. Charif Mohamed** 
 
 ## Licence
 
